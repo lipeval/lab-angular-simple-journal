@@ -1,0 +1,10 @@
+<section class="entries-container">
+
+  <div>
+  <div *ngFor="let entrie of entries">
+    <a [routerLink]="['/entry', entrie._id]"><h3>{{entrie.title}}</h3></a>
+    <p>{{entrie.date | date:'dd MMMM yyyy'}}</p>
+  </div>
+</div> 
+</section>
+
